@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class AsesoftwareTestSwift202405UITests: XCTestCase {
+final class ScotiaBankTestSwift202405UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

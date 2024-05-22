@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5620F33B2BFD39160008C644 /* AsesoftwareTestSwift202405.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsesoftwareTestSwift202405.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5620F33B2BFD39160008C644 /* ScotiaBankTestSwift202405.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScotiaBankTestSwift202405.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5620F33E2BFD39160008C644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5620F3402BFD39160008C644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5620F3422BFD39160008C644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,9 +46,9 @@
 		5620F3472BFD391A0008C644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5620F34A2BFD391A0008C644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5620F34C2BFD391A0008C644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5620F3512BFD391A0008C644 /* AsesoftwareTestSwift202405Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsesoftwareTestSwift202405Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5620F3512BFD391A0008C644 /* ScotiaBankTestSwift202405Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScotiaBankTestSwift202405Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5620F3552BFD391A0008C644 /* AsesoftwareTestSwift202405Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsesoftwareTestSwift202405Tests.swift; sourceTree = "<group>"; };
-		5620F35B2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsesoftwareTestSwift202405UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5620F35B2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScotiaBankTestSwift202405UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5620F35F2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsesoftwareTestSwift202405UITests.swift; sourceTree = "<group>"; };
 		5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsesoftwareTestSwift202405UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5620F36F2BFD39B50008C644 /* TMDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewController.swift; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		5620F3322BFD39160008C644 = {
 			isa = PBXGroup;
 			children = (
-				5620F33D2BFD39160008C644 /* AsesoftwareTestSwift202405 */,
-				5620F3542BFD391A0008C644 /* AsesoftwareTestSwift202405Tests */,
-				5620F35E2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests */,
+				5620F33D2BFD39160008C644 /* ScotiaBankTestSwift202405 */,
+				5620F3542BFD391A0008C644 /* ScotiaBankTestSwift202405Tests */,
+				5620F35E2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests */,
 				5620F33C2BFD39160008C644 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,14 +93,14 @@
 		5620F33C2BFD39160008C644 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5620F33B2BFD39160008C644 /* AsesoftwareTestSwift202405.app */,
-				5620F3512BFD391A0008C644 /* AsesoftwareTestSwift202405Tests.xctest */,
-				5620F35B2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests.xctest */,
+				5620F33B2BFD39160008C644 /* ScotiaBankTestSwift202405.app */,
+				5620F3512BFD391A0008C644 /* ScotiaBankTestSwift202405Tests.xctest */,
+				5620F35B2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5620F33D2BFD39160008C644 /* AsesoftwareTestSwift202405 */ = {
+		5620F33D2BFD39160008C644 /* ScotiaBankTestSwift202405 */ = {
 			isa = PBXGroup;
 			children = (
 				5620F36E2BFD39310008C644 /* View */,
@@ -112,24 +112,24 @@
 				5620F3492BFD391A0008C644 /* LaunchScreen.storyboard */,
 				5620F34C2BFD391A0008C644 /* Info.plist */,
 			);
-			path = AsesoftwareTestSwift202405;
+			path = ScotiaBankTestSwift202405;
 			sourceTree = "<group>";
 		};
-		5620F3542BFD391A0008C644 /* AsesoftwareTestSwift202405Tests */ = {
+		5620F3542BFD391A0008C644 /* ScotiaBankTestSwift202405Tests */ = {
 			isa = PBXGroup;
 			children = (
 				5620F3552BFD391A0008C644 /* AsesoftwareTestSwift202405Tests.swift */,
 			);
-			path = AsesoftwareTestSwift202405Tests;
+			path = ScotiaBankTestSwift202405Tests;
 			sourceTree = "<group>";
 		};
-		5620F35E2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests */ = {
+		5620F35E2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests */ = {
 			isa = PBXGroup;
 			children = (
 				5620F35F2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests.swift */,
 				5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */,
 			);
-			path = AsesoftwareTestSwift202405UITests;
+			path = ScotiaBankTestSwift202405UITests;
 			sourceTree = "<group>";
 		};
 		5620F36E2BFD39310008C644 /* View */ = {
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5620F33A2BFD39160008C644 /* AsesoftwareTestSwift202405 */ = {
+		5620F33A2BFD39160008C644 /* ScotiaBankTestSwift202405 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5620F3652BFD391A0008C644 /* Build configuration list for PBXNativeTarget "AsesoftwareTestSwift202405" */;
+			buildConfigurationList = 5620F3652BFD391A0008C644 /* Build configuration list for PBXNativeTarget "ScotiaBankTestSwift202405" */;
 			buildPhases = (
 				5620F3372BFD39160008C644 /* Sources */,
 				5620F3382BFD39160008C644 /* Frameworks */,
@@ -156,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = AsesoftwareTestSwift202405;
+			name = ScotiaBankTestSwift202405;
 			productName = AsesoftwareTestSwift202405;
-			productReference = 5620F33B2BFD39160008C644 /* AsesoftwareTestSwift202405.app */;
+			productReference = 5620F33B2BFD39160008C644 /* ScotiaBankTestSwift202405.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5620F3502BFD391A0008C644 /* AsesoftwareTestSwift202405Tests */ = {
+		5620F3502BFD391A0008C644 /* ScotiaBankTestSwift202405Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5620F3682BFD391A0008C644 /* Build configuration list for PBXNativeTarget "AsesoftwareTestSwift202405Tests" */;
+			buildConfigurationList = 5620F3682BFD391A0008C644 /* Build configuration list for PBXNativeTarget "ScotiaBankTestSwift202405Tests" */;
 			buildPhases = (
 				5620F34D2BFD391A0008C644 /* Sources */,
 				5620F34E2BFD391A0008C644 /* Frameworks */,
@@ -174,14 +174,14 @@
 			dependencies = (
 				5620F3532BFD391A0008C644 /* PBXTargetDependency */,
 			);
-			name = AsesoftwareTestSwift202405Tests;
+			name = ScotiaBankTestSwift202405Tests;
 			productName = AsesoftwareTestSwift202405Tests;
-			productReference = 5620F3512BFD391A0008C644 /* AsesoftwareTestSwift202405Tests.xctest */;
+			productReference = 5620F3512BFD391A0008C644 /* ScotiaBankTestSwift202405Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5620F35A2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests */ = {
+		5620F35A2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5620F36B2BFD391A0008C644 /* Build configuration list for PBXNativeTarget "AsesoftwareTestSwift202405UITests" */;
+			buildConfigurationList = 5620F36B2BFD391A0008C644 /* Build configuration list for PBXNativeTarget "ScotiaBankTestSwift202405UITests" */;
 			buildPhases = (
 				5620F3572BFD391A0008C644 /* Sources */,
 				5620F3582BFD391A0008C644 /* Frameworks */,
@@ -192,9 +192,9 @@
 			dependencies = (
 				5620F35D2BFD391A0008C644 /* PBXTargetDependency */,
 			);
-			name = AsesoftwareTestSwift202405UITests;
+			name = ScotiaBankTestSwift202405UITests;
 			productName = AsesoftwareTestSwift202405UITests;
-			productReference = 5620F35B2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests.xctest */;
+			productReference = 5620F35B2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5620F3362BFD39160008C644 /* Build configuration list for PBXProject "AsesoftwareTestSwift202405" */;
+			buildConfigurationList = 5620F3362BFD39160008C644 /* Build configuration list for PBXProject "ScotiaBankTestSwift202405" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5620F33A2BFD39160008C644 /* AsesoftwareTestSwift202405 */,
-				5620F3502BFD391A0008C644 /* AsesoftwareTestSwift202405Tests */,
-				5620F35A2BFD391A0008C644 /* AsesoftwareTestSwift202405UITests */,
+				5620F33A2BFD39160008C644 /* ScotiaBankTestSwift202405 */,
+				5620F3502BFD391A0008C644 /* ScotiaBankTestSwift202405Tests */,
+				5620F35A2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,12 +302,12 @@
 /* Begin PBXTargetDependency section */
 		5620F3532BFD391A0008C644 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5620F33A2BFD39160008C644 /* AsesoftwareTestSwift202405 */;
+			target = 5620F33A2BFD39160008C644 /* ScotiaBankTestSwift202405 */;
 			targetProxy = 5620F3522BFD391A0008C644 /* PBXContainerItemProxy */;
 		};
 		5620F35D2BFD391A0008C644 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5620F33A2BFD39160008C644 /* AsesoftwareTestSwift202405 */;
+			target = 5620F33A2BFD39160008C644 /* ScotiaBankTestSwift202405 */;
 			targetProxy = 5620F35C2BFD391A0008C644 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -460,7 +460,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F6KDBC2B2W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AsesoftwareTestSwift202405/Info.plist;
+				INFOPLIST_FILE = ScotiaBankTestSwift202405/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asesoftware.AsesoftwareTestSwift202405.AsesoftwareTestSwift202405;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotiabank.ScotiaBankTestSwift202405.AsesoftwareTestSwift202405;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -488,7 +488,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F6KDBC2B2W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AsesoftwareTestSwift202405/Info.plist;
+				INFOPLIST_FILE = ScotiaBankTestSwift202405/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -499,7 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asesoftware.AsesoftwareTestSwift202405.AsesoftwareTestSwift202405;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotiabank.ScotiaBankTestSwift202405.AsesoftwareTestSwift202405;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -586,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5620F3362BFD39160008C644 /* Build configuration list for PBXProject "AsesoftwareTestSwift202405" */ = {
+		5620F3362BFD39160008C644 /* Build configuration list for PBXProject "ScotiaBankTestSwift202405" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5620F3632BFD391A0008C644 /* Debug */,
@@ -595,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5620F3652BFD391A0008C644 /* Build configuration list for PBXNativeTarget "AsesoftwareTestSwift202405" */ = {
+		5620F3652BFD391A0008C644 /* Build configuration list for PBXNativeTarget "ScotiaBankTestSwift202405" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5620F3662BFD391A0008C644 /* Debug */,
@@ -604,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5620F3682BFD391A0008C644 /* Build configuration list for PBXNativeTarget "AsesoftwareTestSwift202405Tests" */ = {
+		5620F3682BFD391A0008C644 /* Build configuration list for PBXNativeTarget "ScotiaBankTestSwift202405Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5620F3692BFD391A0008C644 /* Debug */,
@@ -613,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5620F36B2BFD391A0008C644 /* Build configuration list for PBXNativeTarget "AsesoftwareTestSwift202405UITests" */ = {
+		5620F36B2BFD391A0008C644 /* Build configuration list for PBXNativeTarget "ScotiaBankTestSwift202405UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5620F36C2BFD391A0008C644 /* Debug */,
