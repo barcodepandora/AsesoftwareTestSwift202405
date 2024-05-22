@@ -9,14 +9,40 @@ import UIKit
 
 class TMDBViewController: UIViewController {
 
+    let segmentedControl = UISegmentedControl(items: ["Arquitecto", "Locutor"])
+    let filtertextField = UITextField(frame: CGRect(x: 28, y: 128, width: 267, height: 48))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         print("Hey")
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.addTarget(self, action: #selector(reactToChange), for: .valueChanged)
+        segmentedControl.frame = CGRect(x: 28, y: 68, width: 198, height: 98)
+        view.addSubview(segmentedControl)
+        
+        filtertextField.placeholder = "Tyoe"
+        filtertextField.borderStyle = .roundedRect
+        filtertextField.clearButtonMode = .whileEditing
+        filtertextField.addTarget(self, action: #selector(handleFilter), for: .editingChanged)
+        view.addSubview(filtertextField)
     }
 
+    @objc func reactToChange() {
+        print("Changed")
+    }
+    
+    @objc func handleFilter() {
+        Task {
+            do {
+                try await TMDBUseCase().deliverMovies()
+            } catch {
 
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
