@@ -18,6 +18,8 @@
 		5620F3622BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */; };
 		5620F3712BFD39B50008C644 /* TMDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620F36F2BFD39B50008C644 /* TMDBViewController.swift */; };
 		5620F3722BFD39B50008C644 /* TMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5620F3702BFD39B50008C644 /* TMDBViewController.xib */; };
+		5693909B2BFE380600B13FC5 /* TMDBUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909A2BFE380600B13FC5 /* TMDBUseCase.swift */; };
+		5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909D2BFE3D6B00B13FC5 /* TMDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsesoftwareTestSwift202405UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5620F36F2BFD39B50008C644 /* TMDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewController.swift; sourceTree = "<group>"; };
 		5620F3702BFD39B50008C644 /* TMDBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMDBViewController.xib; sourceTree = "<group>"; };
+		5693909A2BFE380600B13FC5 /* TMDBUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBUseCase.swift; sourceTree = "<group>"; };
+		5693909D2BFE3D6B00B13FC5 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 		5620F33D2BFD39160008C644 /* ScotiaBankTestSwift202405 */ = {
 			isa = PBXGroup;
 			children = (
+				5693909C2BFE3D5700B13FC5 /* Model */,
+				569390992BFE372700B13FC5 /* UseCase */,
 				5620F36E2BFD39310008C644 /* View */,
 				5620F33E2BFD39160008C644 /* AppDelegate.swift */,
 				5620F3402BFD39160008C644 /* SceneDelegate.swift */,
@@ -139,6 +145,22 @@
 				5620F3702BFD39B50008C644 /* TMDBViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		569390992BFE372700B13FC5 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				5693909A2BFE380600B13FC5 /* TMDBUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		5693909C2BFE3D5700B13FC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5693909D2BFE3D6B00B13FC5 /* TMDB.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5693909B2BFE380600B13FC5 /* TMDBUseCase.swift in Sources */,
 				5620F3432BFD39160008C644 /* ViewController.swift in Sources */,
 				5620F3712BFD39B50008C644 /* TMDBViewController.swift in Sources */,
 				5620F33F2BFD39160008C644 /* AppDelegate.swift in Sources */,
+				5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */,
 				5620F3412BFD39160008C644 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
