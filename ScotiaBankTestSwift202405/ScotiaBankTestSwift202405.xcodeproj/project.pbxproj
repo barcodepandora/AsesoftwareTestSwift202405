@@ -22,6 +22,9 @@
 		5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909D2BFE3D6B00B13FC5 /* TMDB.swift */; };
 		569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */; };
 		569390A22BFE656500B13FC5 /* TMDBViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569390A02BFE656500B13FC5 /* TMDBViewCell.xib */; };
+		569390A52BFE998C00B13FC5 /* FilterFlavorAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */; };
+		569390A62BFE998C00B13FC5 /* FilterFlavorAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */; };
+		569390A92BFE99F400B13FC5 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569390A82BFE99F400B13FC5 /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		5693909D2BFE3D6B00B13FC5 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
 		5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewCell.swift; sourceTree = "<group>"; };
 		569390A02BFE656500B13FC5 /* TMDBViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMDBViewCell.xib; sourceTree = "<group>"; };
+		569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFlavorAViewController.swift; sourceTree = "<group>"; };
+		569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterFlavorAViewController.xib; sourceTree = "<group>"; };
+		569390A82BFE99F400B13FC5 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 		5620F33D2BFD39160008C644 /* ScotiaBankTestSwift202405 */ = {
 			isa = PBXGroup;
 			children = (
+				569390A72BFE99B700B13FC5 /* Shared */,
 				5693909C2BFE3D5700B13FC5 /* Model */,
 				569390992BFE372700B13FC5 /* UseCase */,
 				5620F36E2BFD39310008C644 /* View */,
@@ -149,6 +156,8 @@
 				5620F3702BFD39B50008C644 /* TMDBViewController.xib */,
 				5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */,
 				569390A02BFE656500B13FC5 /* TMDBViewCell.xib */,
+				569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */,
+				569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +176,14 @@
 				5693909D2BFE3D6B00B13FC5 /* TMDB.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		569390A72BFE99B700B13FC5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				569390A82BFE99F400B13FC5 /* Singleton.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +292,7 @@
 			files = (
 				569390A22BFE656500B13FC5 /* TMDBViewCell.xib in Resources */,
 				5620F34B2BFD391A0008C644 /* LaunchScreen.storyboard in Resources */,
+				569390A62BFE998C00B13FC5 /* FilterFlavorAViewController.xib in Resources */,
 				5620F3722BFD39B50008C644 /* TMDBViewController.xib in Resources */,
 				5620F3482BFD391A0008C644 /* Assets.xcassets in Resources */,
 				5620F3462BFD39160008C644 /* Main.storyboard in Resources */,
@@ -306,7 +324,9 @@
 				5620F3432BFD39160008C644 /* ViewController.swift in Sources */,
 				5620F3712BFD39B50008C644 /* TMDBViewController.swift in Sources */,
 				5620F33F2BFD39160008C644 /* AppDelegate.swift in Sources */,
+				569390A52BFE998C00B13FC5 /* FilterFlavorAViewController.swift in Sources */,
 				5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */,
+				569390A92BFE99F400B13FC5 /* Singleton.swift in Sources */,
 				5620F3412BFD39160008C644 /* SceneDelegate.swift in Sources */,
 				569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */,
 			);

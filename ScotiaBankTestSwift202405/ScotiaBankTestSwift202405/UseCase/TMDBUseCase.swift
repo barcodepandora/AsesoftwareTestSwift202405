@@ -12,7 +12,7 @@ protocol TMDBUseCaseProtocol {
 }
 
 class TMDBUseCase: TMDBUseCaseProtocol {
-    func deliverMovies()  async throws -> TMDB {
+    func deliverMovies() async throws -> TMDB {
         let (data, _) = try await URLSession.shared.data(from: URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=41bb2316eccb422b9542a10273931559")!)
         let decoder = JSONDecoder()
         let aTMDB = try decoder.decode(TMDB.self, from: data)
