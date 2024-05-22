@@ -20,6 +20,8 @@
 		5620F3722BFD39B50008C644 /* TMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5620F3702BFD39B50008C644 /* TMDBViewController.xib */; };
 		5693909B2BFE380600B13FC5 /* TMDBUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909A2BFE380600B13FC5 /* TMDBUseCase.swift */; };
 		5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909D2BFE3D6B00B13FC5 /* TMDB.swift */; };
+		569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */; };
+		569390A22BFE656500B13FC5 /* TMDBViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569390A02BFE656500B13FC5 /* TMDBViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		5620F3702BFD39B50008C644 /* TMDBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMDBViewController.xib; sourceTree = "<group>"; };
 		5693909A2BFE380600B13FC5 /* TMDBUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBUseCase.swift; sourceTree = "<group>"; };
 		5693909D2BFE3D6B00B13FC5 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
+		5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewCell.swift; sourceTree = "<group>"; };
+		569390A02BFE656500B13FC5 /* TMDBViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMDBViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 			children = (
 				5620F36F2BFD39B50008C644 /* TMDBViewController.swift */,
 				5620F3702BFD39B50008C644 /* TMDBViewController.xib */,
+				5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */,
+				569390A02BFE656500B13FC5 /* TMDBViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569390A22BFE656500B13FC5 /* TMDBViewCell.xib in Resources */,
 				5620F34B2BFD391A0008C644 /* LaunchScreen.storyboard in Resources */,
 				5620F3722BFD39B50008C644 /* TMDBViewController.xib in Resources */,
 				5620F3482BFD391A0008C644 /* Assets.xcassets in Resources */,
@@ -301,6 +308,7 @@
 				5620F33F2BFD39160008C644 /* AppDelegate.swift in Sources */,
 				5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */,
 				5620F3412BFD39160008C644 /* SceneDelegate.swift in Sources */,
+				569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

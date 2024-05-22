@@ -9,8 +9,11 @@ import UIKit
 
 class TMDBViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     let segmentedControl = UISegmentedControl(items: ["Arquitecto", "Locutor"])
     let filtertextField = UITextField(frame: CGRect(x: 28, y: 128, width: 267, height: 48))
+    let identifier = "TMDBViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,9 @@ class TMDBViewController: UIViewController {
         filtertextField.clearButtonMode = .whileEditing
         filtertextField.addTarget(self, action: #selector(handleFilter), for: .editingChanged)
         view.addSubview(filtertextField)
+        
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: self.identifier, bundle: nil), forCellReuseIdentifier: self.identifier)
     }
 
     @objc func reactToChange() {
@@ -53,4 +59,18 @@ class TMDBViewController: UIViewController {
     }
     */
 
+}
+
+extension TMDBViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as! TMDBViewCell
+        cell.labelOriginalTitle.text = "Fortress"
+        return cell
+    }
+    
+    
 }
