@@ -18,6 +18,9 @@
 		5620F3622BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */; };
 		5620F3712BFD39B50008C644 /* TMDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620F36F2BFD39B50008C644 /* TMDBViewController.swift */; };
 		5620F3722BFD39B50008C644 /* TMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5620F3702BFD39B50008C644 /* TMDBViewController.xib */; };
+		568DF1312BFFEF9500594259 /* ImagePresentedAsynchronously.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DF1302BFFEF9500594259 /* ImagePresentedAsynchronously.swift */; };
+		568DF1332BFFF62300594259 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DF1322BFFF62300594259 /* UIImageView+URL.swift */; };
+		568DF1352BFFF9D100594259 /* UseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DF1342BFFF9D100594259 /* UseCaseTest.swift */; };
 		5693909B2BFE380600B13FC5 /* TMDBUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909A2BFE380600B13FC5 /* TMDBUseCase.swift */; };
 		5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909D2BFE3D6B00B13FC5 /* TMDB.swift */; };
 		569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */; };
@@ -25,6 +28,7 @@
 		569390A52BFE998C00B13FC5 /* FilterFlavorAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */; };
 		569390A62BFE998C00B13FC5 /* FilterFlavorAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */; };
 		569390A92BFE99F400B13FC5 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569390A82BFE99F400B13FC5 /* Singleton.swift */; };
+		56D9D1B12BFFA578003DA521 /* TMDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9D1B02BFFA578003DA521 /* TMDBViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,9 @@
 		5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsesoftwareTestSwift202405UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5620F36F2BFD39B50008C644 /* TMDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewController.swift; sourceTree = "<group>"; };
 		5620F3702BFD39B50008C644 /* TMDBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMDBViewController.xib; sourceTree = "<group>"; };
+		568DF1302BFFEF9500594259 /* ImagePresentedAsynchronously.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePresentedAsynchronously.swift; sourceTree = "<group>"; };
+		568DF1322BFFF62300594259 /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		568DF1342BFFF9D100594259 /* UseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseTest.swift; sourceTree = "<group>"; };
 		5693909A2BFE380600B13FC5 /* TMDBUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBUseCase.swift; sourceTree = "<group>"; };
 		5693909D2BFE3D6B00B13FC5 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
 		5693909F2BFE656500B13FC5 /* TMDBViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewCell.swift; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 		569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFlavorAViewController.swift; sourceTree = "<group>"; };
 		569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterFlavorAViewController.xib; sourceTree = "<group>"; };
 		569390A82BFE99F400B13FC5 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		56D9D1B02BFFA578003DA521 /* TMDBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		5620F3322BFD39160008C644 = {
 			isa = PBXGroup;
 			children = (
+				568DF1342BFFF9D100594259 /* UseCaseTest.swift */,
 				5620F33D2BFD39160008C644 /* ScotiaBankTestSwift202405 */,
 				5620F3542BFD391A0008C644 /* ScotiaBankTestSwift202405Tests */,
 				5620F35E2BFD391A0008C644 /* ScotiaBankTestSwift202405UITests */,
@@ -117,9 +126,11 @@
 		5620F33D2BFD39160008C644 /* ScotiaBankTestSwift202405 */ = {
 			isa = PBXGroup;
 			children = (
+				568DF12F2BFFEF7600594259 /* Atelier */,
 				569390A72BFE99B700B13FC5 /* Shared */,
 				5693909C2BFE3D5700B13FC5 /* Model */,
 				569390992BFE372700B13FC5 /* UseCase */,
+				56D9D1AF2BFFA555003DA521 /* ViewModel */,
 				5620F36E2BFD39310008C644 /* View */,
 				5620F33E2BFD39160008C644 /* AppDelegate.swift */,
 				5620F3402BFD39160008C644 /* SceneDelegate.swift */,
@@ -162,6 +173,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		568DF12F2BFFEF7600594259 /* Atelier */ = {
+			isa = PBXGroup;
+			children = (
+				568DF1302BFFEF9500594259 /* ImagePresentedAsynchronously.swift */,
+				568DF1322BFFF62300594259 /* UIImageView+URL.swift */,
+			);
+			path = Atelier;
+			sourceTree = "<group>";
+		};
 		569390992BFE372700B13FC5 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +204,14 @@
 				569390A82BFE99F400B13FC5 /* Singleton.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		56D9D1AF2BFFA555003DA521 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56D9D1B02BFFA578003DA521 /* TMDBViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,12 +350,15 @@
 			files = (
 				5693909B2BFE380600B13FC5 /* TMDBUseCase.swift in Sources */,
 				5620F3432BFD39160008C644 /* ViewController.swift in Sources */,
+				568DF1332BFFF62300594259 /* UIImageView+URL.swift in Sources */,
 				5620F3712BFD39B50008C644 /* TMDBViewController.swift in Sources */,
 				5620F33F2BFD39160008C644 /* AppDelegate.swift in Sources */,
 				569390A52BFE998C00B13FC5 /* FilterFlavorAViewController.swift in Sources */,
 				5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */,
 				569390A92BFE99F400B13FC5 /* Singleton.swift in Sources */,
+				56D9D1B12BFFA578003DA521 /* TMDBViewModel.swift in Sources */,
 				5620F3412BFD39160008C644 /* SceneDelegate.swift in Sources */,
+				568DF1312BFFEF9500594259 /* ImagePresentedAsynchronously.swift in Sources */,
 				569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5620F3562BFD391A0008C644 /* AsesoftwareTestSwift202405Tests.swift in Sources */,
+				568DF1352BFFF9D100594259 /* UseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

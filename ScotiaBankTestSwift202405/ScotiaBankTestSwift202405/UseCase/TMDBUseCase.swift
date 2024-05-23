@@ -8,14 +8,59 @@
 import Foundation
 
 protocol TMDBUseCaseProtocol {
-    func deliverMovies() async throws -> TMDB
+    func fetchData() async throws -> [Movie]
+    func getData(singleton: Singleton, order: MovieOrder, filter: String) -> [Movie]
 }
 
 class TMDBUseCase: TMDBUseCaseProtocol {
-    func deliverMovies() async throws -> TMDB {
+    
+    var movies: [Movie]?
+    
+    func fetchData() async throws -> [Movie] {
         let (data, _) = try await URLSession.shared.data(from: URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=41bb2316eccb422b9542a10273931559")!)
         let decoder = JSONDecoder()
         let aTMDB = try decoder.decode(TMDB.self, from: data)
-        return aTMDB
+        movies = aTMDB.results
+        return movies!
+    }
+    
+    func getData(singleton: Singleton, order: MovieOrder, filter: String) -> [Movie] {
+        var moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
+        
+        switch singleton.adult {
+        case .allMinusAdult:
+            moviesThosePresent = moviesThosePresent!.filter { $0.adult == false }
+        case .adult:
+            moviesThosePresent = moviesThosePresent!.filter { $0.adult == true }
+        case .all:
+            moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
+        }
+        
+        switch singleton.language {
+        case .english:
+            moviesThosePresent = moviesThosePresent!.filter { $0.original_language == "en" }
+        case .francaise:
+            moviesThosePresent = moviesThosePresent!.filter { $0.original_language == "fr" }
+        case .all:
+            moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
+        }
+        
+        switch singleton.average {
+        case .lessThan5K:
+            moviesThosePresent = moviesThosePresent!.filter { $0.vote_average! <= 7 }
+        case .moreThan5K:
+            moviesThosePresent = moviesThosePresent!.filter { $0.vote_average! > 7 }
+        case .all:
+            moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
+        }
+        
+        switch order {
+        case .popularity:
+            moviesThosePresent = moviesThosePresent!.sorted { $0.popularity! > $1.popularity! }
+        case .topRated:
+            moviesThosePresent = moviesThosePresent!.sorted { $0.vote_count! > $1.vote_count! }
+        }
+        
+        return moviesThosePresent!
     }
 }

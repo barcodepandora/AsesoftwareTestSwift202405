@@ -15,18 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func begin(_ sender: Any) {
-        print("Aqui vamos a TMDBVC")
         self.navigationController?.pushViewController(TMDBViewController(), animated: true)
-//        Task {
-//            do {
-//                try await TMDBUseCase().deliverMovies()
-//            } catch {
-//                
-//            }
-//            
-//        }
-        
     }
-    
 }
 

@@ -13,14 +13,28 @@ enum Adult {
     case adult
 }
 
+enum Language {
+    case all
+    case english
+    case francaise
+}
+
+enum Average {
+    case all
+    case lessThan5K
+    case moreThan5K
+}
+
 class Singleton {
     static let shared = Singleton()
     
     var adult = Adult.all
+    var language = Language.all
+    var average = Average.all
     var main: TMDBViewController?
     
     func research() {
-        main?.reactToChange()
+        main?.reloadTable()
     }
 }
 

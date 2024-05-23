@@ -15,18 +15,54 @@ class FilterFlavorAViewController: ViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func chooseNoAdult(_ sender: Any) {
-        Singleton.shared.adult = Adult.allMinusAdult
+    func popFilter() {
         Singleton.shared.research()
         self.dismiss(animated: true)
     }
     
+    @IBAction func chooseNoAdult(_ sender: Any) {
+        Singleton.shared.adult = Adult.allMinusAdult
+        popFilter()
+    }
+    
     @IBAction func chooseAll(_ sender: Any) {
         Singleton.shared.adult = Adult.all
+        popFilter()
     }
     
     @IBAction func chooseAdult(_ sender: Any) {
         Singleton.shared.adult = Adult.adult
+        popFilter() 
+    }
+    
+    @IBAction func chooseAllLanguages(_ sender: Any) {
+        Singleton.shared.language = Language.all
+        popFilter()
+    }
+    
+    @IBAction func chooseEnglish(_ sender: Any) {
+        Singleton.shared.language = Language.english
+        popFilter()
+    }
+    
+    @IBAction func chooseFrench(_ sender: Any) {
+        Singleton.shared.language = Language.francaise
+        popFilter()
+    }
+    
+    @IBAction func chooseAllAverages(_ sender: Any) {
+        Singleton.shared.average = Average.all
+        popFilter()
+    }
+    
+    @IBAction func chooseLessThan5K(_ sender: Any) {
+        Singleton.shared.average = Average.lessThan5K
+        popFilter()
+    }
+    
+    @IBAction func chooseMoreThan5K(_ sender: Any) {
+        Singleton.shared.average = Average.moreThan5K
+        popFilter()
     }
     
     /*
