@@ -1,11 +1,15 @@
 # ScotiaBankTest
 App TMDB.
+
 Por Juan Manuel Moreno Beltran {iOS native}
 
 # Instrucciones
 Al lanzar la app, dar opción "Comenzar".
+
 Al escoger una categoría de resultados, se muestras resultados nuevos de búsqueda de acuerdo a la categoría.
+
 Al escribir en el campo de texto, se muestras resultados nuevos de búsqueda de acuerdo al texto escrito.
+
 Al dar swipe a la derecha se muestra una vista de filtros. Al tocar un filtro, se muestras resultados nuevos de búsqueda de acuerdo a los filtros (Microinteracciones.
 
 # Arquitectura
@@ -17,19 +21,15 @@ Patrón de arquitectura MVVM principios SOLID
 
 Model
 TMDB | Movie
-)))
 
 Business Use Case
 TMDBUseCase
-)))
 
 ViewModel
 TMDBViewModel 
-)))
 
 View
 TMDBViewController
-)))
 
 Unit Test
 UseCaseTest
@@ -39,10 +39,15 @@ UseCaseTest
 
 ## Memoria
 Agrupación de funcionalidades
+
 Asignaciones con oeradores ternarios
+
 Asignaciones haciendo uso de parámetros por defecto
+
 Gestión de dada desde los casos de uso
+
 Gestión de una clase unica de filtros
+
 Aplicación SOLID Principio D
 
 ## Layouts
