@@ -16,10 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="321" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="3z4-St-f7h">
-                        <rect key="frame" x="8" y="12" width="145" height="105"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="3z4-St-f7h">
+                        <rect key="frame" x="8" y="12" width="283" height="105"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="145" id="I9I-Pg-aMa"/>
+                            <constraint firstAttribute="width" constant="298" id="I9I-Pg-aMa"/>
                             <constraint firstAttribute="height" constant="105" id="bZV-vS-3H4"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -40,7 +40,7 @@
             <connections>
                 <outlet property="labelOriginalTitle" destination="3z4-St-f7h" id="EkE-8k-ttl"/>
             </connections>
-            <point key="canvasLocation" x="71" y="57"/>
+            <point key="canvasLocation" x="70.992366412213741" y="56.690140845070424"/>
         </tableViewCell>
     </objects>
 </document>

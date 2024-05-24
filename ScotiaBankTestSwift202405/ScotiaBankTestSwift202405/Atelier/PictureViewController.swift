@@ -22,7 +22,6 @@ class PictureViewController: ViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        let imageUrl = "https://image.tmdb.org/t/p/original/uXUs1fwSuE06LgYETw2mi4JxQvc.jpg"
         let imageUrl = urlPicture ?? ""
         AsyncImageLoader.shared.loadImage(from: imageUrl) { [weak self] image in
             self?.picture.image = image

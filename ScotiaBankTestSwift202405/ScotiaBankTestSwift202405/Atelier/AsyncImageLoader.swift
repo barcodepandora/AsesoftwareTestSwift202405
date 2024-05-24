@@ -9,10 +9,9 @@ import Foundation
 import UIKit
 
 class AsyncImageLoader {
+   
     static let shared = AsyncImageLoader()
     private var imageCache = NSCache<NSString, UIImage>()
-    
-    private init() {}
     
     func loadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
         if let cachedImage = imageCache.object(forKey: urlString as NSString) {
