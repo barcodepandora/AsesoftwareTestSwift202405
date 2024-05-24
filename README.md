@@ -10,6 +10,8 @@ Al escoger una categoría de resultados, se muestras resultados nuevos de búsqu
 
 Al escribir en el campo de texto, se muestras resultados nuevos de búsqueda de acuerdo al texto escrito.
 
+Al tocar una película en la tabla, muestra su poster.
+
 Al dar swipe a la derecha se muestra una vista de filtros. Al tocar un filtro, se muestras resultados nuevos de búsqueda de acuerdo a los filtros (Microinteracciones.
 
 # Arquitectura

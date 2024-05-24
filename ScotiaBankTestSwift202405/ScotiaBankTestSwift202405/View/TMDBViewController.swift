@@ -40,6 +40,7 @@ class TMDBViewController: UIViewController {
     }
     
     fileprivate func prepareTable() {
+        tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: self.identifier, bundle: nil), forCellReuseIdentifier: self.identifier)
         do {
@@ -95,27 +96,25 @@ class TMDBViewController: UIViewController {
     }
 }
 
+extension TMDBViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let picture = "https://image.tmdb.org/t/p/original" + (viewModel?.getData(singleton: Singleton.shared, order: movieOrder, filter: filtertextField.text!)[indexPath.row].poster_path)!
+        self.present(PictureViewController(urlPicture: picture),  animated: true)
+    }
+}
+
 extension TMDBViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (viewModel?.getData(singleton: Singleton.shared, order: movieOrder, filter: filtertextField.text!).count)!
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 5
+        return 108
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as! TMDBViewCell
         cell.labelOriginalTitle.text = viewModel?.getData(singleton: Singleton.shared, order: movieOrder, filter: filtertextField.text!)[indexPath.row].title
-        DispatchQueue.global().async {
-                let url = URL(string: "https://image.tmdb.org/t/p/original/uXUs1fwSuE06LgYETw2mi4JxQvc.jpg")!
-                if let data = try? Data(contentsOf: url) {
-                    DispatchQueue.main.async {
-                        let im = UIImage(data: data)
-                        cell.photo?.image = UIImage(contentsOfFile: "pencil")
-                    }
-                }
-            }
         return cell
     }
 }
