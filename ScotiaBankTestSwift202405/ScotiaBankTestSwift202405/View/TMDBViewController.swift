@@ -46,7 +46,7 @@ class TMDBViewController: UIViewController {
         do {
             viewModel = TMDBViewModel()
             viewModel?.fetchData()
-            tableView.reloadData()
+            reloadTable()
         }
     }
     
@@ -87,25 +87,26 @@ class TMDBViewController: UIViewController {
 
     @objc func reloadTable() {
         movieOrder = segmentedControl.selectedSegmentIndex == 1 ? .topRated : .popularity
+        Handler.shared.moviesThosePresent = viewModel?.getData(filterMovies: Handler.shared, order: movieOrder, filter: filtertextField.text!) ?? []
         tableView.reloadData()
     }
     
     @objc func handleSwipe(_ sender: UISwipeGestureRecognizer) {
-        Singleton.shared.main = self
+        Handler.shared.main = self
         self.present(FilterFlavorAViewController(), animated: true)
     }
 }
 
 extension TMDBViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let picture = "https://image.tmdb.org/t/p/original" + (viewModel?.getData(filterMovies: Singleton.shared, order: movieOrder, filter: filtertextField.text!)[indexPath.row].poster_path)!
+        let picture = "https://image.tmdb.org/t/p/original" + Handler.shared.moviesThosePresent[indexPath.row].poster_path!
         self.present(PictureViewController(urlPicture: picture),  animated: true)
     }
 }
 
 extension TMDBViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (viewModel?.getData(filterMovies: Singleton.shared, order: movieOrder, filter: filtertextField.text!).count)!
+        return Handler.shared.moviesThosePresent.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -114,7 +115,7 @@ extension TMDBViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as! TMDBViewCell
-        cell.labelOriginalTitle.text = viewModel?.getData(filterMovies: Singleton.shared, order: movieOrder, filter: filtertextField.text!)[indexPath.row].title
+        cell.labelOriginalTitle.text = Handler.shared.moviesThosePresent[indexPath.row].title
         return cell
     }
 }

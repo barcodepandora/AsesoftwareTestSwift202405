@@ -9,7 +9,7 @@ import Foundation
 
 protocol TMDBUseCaseProtocol {
     func fetchData() async throws -> [Movie]
-    func getData(filterMovies: Singleton, order: MovieOrder, filter: String) -> [Movie]
+    func getData(filterMovies: Handler, order: MovieOrder, filter: String) -> [Movie]
 }
 
 class TMDBUseCase: TMDBUseCaseProtocol {
@@ -24,7 +24,7 @@ class TMDBUseCase: TMDBUseCaseProtocol {
         return movies!
     }
     
-    func getData(filterMovies: Singleton, order: MovieOrder, filter: String) -> [Movie] {
+    func getData(filterMovies: Handler, order: MovieOrder, filter: String) -> [Movie] {
         var moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
         
         switch filterMovies.adult {
@@ -33,7 +33,7 @@ class TMDBUseCase: TMDBUseCaseProtocol {
         case .adult:
             moviesThosePresent = moviesThosePresent!.filter { $0.adult == true }
         case .all:
-            moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
+            break
         }
         
         switch filterMovies.language {
@@ -42,7 +42,7 @@ class TMDBUseCase: TMDBUseCaseProtocol {
         case .francaise:
             moviesThosePresent = moviesThosePresent!.filter { $0.original_language == "fr" }
         case .all:
-            moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
+            break
         }
         
         switch filterMovies.average {
@@ -51,7 +51,7 @@ class TMDBUseCase: TMDBUseCaseProtocol {
         case .moreThan5K:
             moviesThosePresent = moviesThosePresent!.filter { $0.vote_average! > 7 }
         case .all:
-            moviesThosePresent = filter.isEmpty ? movies : movies!.filter { $0.title!.contains(filter) }
+            break
         }
         
         switch order {

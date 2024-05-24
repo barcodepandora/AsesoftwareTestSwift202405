@@ -28,7 +28,7 @@
 		569390A22BFE656500B13FC5 /* TMDBViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569390A02BFE656500B13FC5 /* TMDBViewCell.xib */; };
 		569390A52BFE998C00B13FC5 /* FilterFlavorAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */; };
 		569390A62BFE998C00B13FC5 /* FilterFlavorAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */; };
-		569390A92BFE99F400B13FC5 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569390A82BFE99F400B13FC5 /* Singleton.swift */; };
+		569390A92BFE99F400B13FC5 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569390A82BFE99F400B13FC5 /* Handler.swift */; };
 		56D9D1B12BFFA578003DA521 /* TMDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D9D1B02BFFA578003DA521 /* TMDBViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +75,7 @@
 		569390A02BFE656500B13FC5 /* TMDBViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMDBViewCell.xib; sourceTree = "<group>"; };
 		569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFlavorAViewController.swift; sourceTree = "<group>"; };
 		569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterFlavorAViewController.xib; sourceTree = "<group>"; };
-		569390A82BFE99F400B13FC5 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		569390A82BFE99F400B13FC5 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		56D9D1B02BFFA578003DA521 /* TMDBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,7 +204,7 @@
 		569390A72BFE99B700B13FC5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				569390A82BFE99F400B13FC5 /* Singleton.swift */,
+				569390A82BFE99F400B13FC5 /* Handler.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -359,7 +359,7 @@
 				5620F33F2BFD39160008C644 /* AppDelegate.swift in Sources */,
 				569390A52BFE998C00B13FC5 /* FilterFlavorAViewController.swift in Sources */,
 				5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */,
-				569390A92BFE99F400B13FC5 /* Singleton.swift in Sources */,
+				569390A92BFE99F400B13FC5 /* Handler.swift in Sources */,
 				56D9D1B12BFFA578003DA521 /* TMDBViewModel.swift in Sources */,
 				5620F3412BFD39160008C644 /* SceneDelegate.swift in Sources */,
 				569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */,

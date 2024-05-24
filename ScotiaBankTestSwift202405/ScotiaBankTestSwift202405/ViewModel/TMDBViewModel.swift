@@ -9,7 +9,7 @@ import Foundation
 
 protocol TMDBViewModelProtocol {
     func fetchData()
-    func getData(filterMovies: Singleton, order: MovieOrder, filter: String) -> [Movie]
+    func getData(filterMovies: Handler, order: MovieOrder, filter: String) -> [Movie]
 }
 
 class TMDBViewModel: TMDBViewModelProtocol {
@@ -29,7 +29,7 @@ class TMDBViewModel: TMDBViewModelProtocol {
         semaphore.wait()
     }
     
-    func getData(filterMovies: Singleton, order: MovieOrder, filter: String) -> [Movie] {
+    func getData(filterMovies: Handler, order: MovieOrder, filter: String) -> [Movie] {
         return useCase.getData(filterMovies: filterMovies, order: order, filter: filter)
     }
 }

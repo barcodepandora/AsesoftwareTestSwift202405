@@ -324,8 +324,8 @@
             filePath = "ScotiaBankTestSwift202405/View/TMDBViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "reloadTable()"
             landmarkType = "7">
          </BreakpointContent>
@@ -356,8 +356,8 @@
             filePath = "ScotiaBankTestSwift202405/Shared/Singleton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "research()"
             landmarkType = "7">
          </BreakpointContent>
@@ -372,8 +372,8 @@
             filePath = "ScotiaBankTestSwift202405/View/TMDBViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
             landmarkType = "7">
             <Locations>
@@ -468,8 +468,8 @@
             filePath = "ScotiaBankTestSwift202405/View/TMDBViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -484,8 +484,8 @@
             filePath = "ScotiaBankTestSwift202405/View/TMDBViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -518,6 +518,69 @@
                   startingLineNumber = "102"
                   endingLineNumber = "102"
                   offsetFromSymbolStart = "1384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB5C314F-558A-412F-A93B-5AF2F627E088"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getData(filterMovies:order:filter:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CB5C314F-558A-412F-A93B-5AF2F627E088 - 9b60d086d82c6989"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScotiaBankTestSwift202405.TMDBUseCase.getData(filterMovies: ScotiaBankTestSwift202405.Singleton, order: ScotiaBankTestSwift202405.MovieOrder, filter: Swift.String) -&gt; Swift.Array&lt;ScotiaBankTestSwift202405.Movie&gt;"
+                  moduleName = "ScotiaBankTestSwift202405"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2170">
+               </Location>
+               <Location
+                  uuid = "CB5C314F-558A-412F-A93B-5AF2F627E088 - 9bd7849e61dc06f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScotiaBankTestSwift202405.TMDBUseCase.getData(filterMovies: ScotiaBankTestSwift202405.Handler, order: ScotiaBankTestSwift202405.MovieOrder, filter: Swift.String) -&gt; Swift.Array&lt;ScotiaBankTestSwift202405.Movie&gt;"
+                  moduleName = "ScotiaBankTestSwift202405"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2170">
+               </Location>
+               <Location
+                  uuid = "CB5C314F-558A-412F-A93B-5AF2F627E088 - 9bd7849e61dc06f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScotiaBankTestSwift202405.TMDBUseCase.getData(filterMovies: ScotiaBankTestSwift202405.Handler, order: ScotiaBankTestSwift202405.MovieOrder, filter: Swift.String) -&gt; Swift.Array&lt;ScotiaBankTestSwift202405.Movie&gt;"
+                  moduleName = "ScotiaBankTestSwift202405"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1682">
                </Location>
             </Locations>
          </BreakpointContent>
