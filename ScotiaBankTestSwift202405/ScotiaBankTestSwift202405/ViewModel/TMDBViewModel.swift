@@ -10,6 +10,7 @@ import Foundation
 protocol TMDBViewModelProtocol {
     func fetchData()
     func getData(filterMovies: Handler, order: MovieOrder, filter: String) -> [Movie]
+    func orderData(order: MovieOrder, filter: String) -> [Movie]
 }
 
 class TMDBViewModel: TMDBViewModelProtocol {
@@ -30,6 +31,10 @@ class TMDBViewModel: TMDBViewModelProtocol {
     }
     
     func getData(filterMovies: Handler, order: MovieOrder, filter: String) -> [Movie] {
-        return useCase.getData(filterMovies: filterMovies, order: order, filter: filter)
+        return useCase.getData(filterForMovies: filterMovies, order: order, filter: filter)
+    }
+    
+    func orderData(order: MovieOrder, filter: String) -> [Movie] {
+        return useCase.orderData(moviesForOrder: Handler.shared.moviesThosePresent, order: order, filter: filter)
     }
 }

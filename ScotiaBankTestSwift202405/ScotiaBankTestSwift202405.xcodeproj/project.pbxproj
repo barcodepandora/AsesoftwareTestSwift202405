@@ -18,6 +18,8 @@
 		5620F3622BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */; };
 		5620F3712BFD39B50008C644 /* TMDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620F36F2BFD39B50008C644 /* TMDBViewController.swift */; };
 		5620F3722BFD39B50008C644 /* TMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5620F3702BFD39B50008C644 /* TMDBViewController.xib */; };
+		566F81192C061AD600ADB9AB /* TMDBDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F81182C061AD600ADB9AB /* TMDBDelegate.swift */; };
+		566F811C2C0625A900ADB9AB /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F811B2C0625A900ADB9AB /* APIRouter.swift */; };
 		568DF1352BFFF9D100594259 /* UseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DF1342BFFF9D100594259 /* UseCaseTest.swift */; };
 		568DF1392C0009A700594259 /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DF1382C0009A700594259 /* AsyncImageLoader.swift */; };
 		568DF13C2C000F8D00594259 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DF13A2C000F8D00594259 /* PictureViewController.swift */; };
@@ -65,6 +67,8 @@
 		5620F3612BFD391A0008C644 /* AsesoftwareTestSwift202405UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsesoftwareTestSwift202405UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5620F36F2BFD39B50008C644 /* TMDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBViewController.swift; sourceTree = "<group>"; };
 		5620F3702BFD39B50008C644 /* TMDBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMDBViewController.xib; sourceTree = "<group>"; };
+		566F81182C061AD600ADB9AB /* TMDBDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDelegate.swift; sourceTree = "<group>"; };
+		566F811B2C0625A900ADB9AB /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		568DF1342BFFF9D100594259 /* UseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseTest.swift; sourceTree = "<group>"; };
 		568DF1382C0009A700594259 /* AsyncImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoader.swift; sourceTree = "<group>"; };
 		568DF13A2C000F8D00594259 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			children = (
 				568DF12F2BFFEF7600594259 /* Atelier */,
 				569390A72BFE99B700B13FC5 /* Shared */,
+				566F811A2C06259300ADB9AB /* Networking */,
 				5693909C2BFE3D5700B13FC5 /* Model */,
 				569390992BFE372700B13FC5 /* UseCase */,
 				56D9D1AF2BFFA555003DA521 /* ViewModel */,
@@ -171,14 +176,23 @@
 				569390A02BFE656500B13FC5 /* TMDBViewCell.xib */,
 				569390A32BFE998C00B13FC5 /* FilterFlavorAViewController.swift */,
 				569390A42BFE998C00B13FC5 /* FilterFlavorAViewController.xib */,
+				566F81182C061AD600ADB9AB /* TMDBDelegate.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		566F811A2C06259300ADB9AB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				568DF1382C0009A700594259 /* AsyncImageLoader.swift */,
+				566F811B2C0625A900ADB9AB /* APIRouter.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		568DF12F2BFFEF7600594259 /* Atelier */ = {
 			isa = PBXGroup;
 			children = (
-				568DF1382C0009A700594259 /* AsyncImageLoader.swift */,
 				568DF13A2C000F8D00594259 /* PictureViewController.swift */,
 				568DF13B2C000F8D00594259 /* PictureViewController.xib */,
 			);
@@ -359,10 +373,12 @@
 				5620F33F2BFD39160008C644 /* AppDelegate.swift in Sources */,
 				569390A52BFE998C00B13FC5 /* FilterFlavorAViewController.swift in Sources */,
 				5693909E2BFE3D6B00B13FC5 /* TMDB.swift in Sources */,
+				566F811C2C0625A900ADB9AB /* APIRouter.swift in Sources */,
 				569390A92BFE99F400B13FC5 /* Handler.swift in Sources */,
 				56D9D1B12BFFA578003DA521 /* TMDBViewModel.swift in Sources */,
 				5620F3412BFD39160008C644 /* SceneDelegate.swift in Sources */,
 				569390A12BFE656500B13FC5 /* TMDBViewCell.swift in Sources */,
+				566F81192C061AD600ADB9AB /* TMDBDelegate.swift in Sources */,
 				568DF1392C0009A700594259 /* AsyncImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

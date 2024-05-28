@@ -19,7 +19,7 @@ class AsyncImageLoader {
             return
         }
         
-        guard let url = URL(string: urlString) else {
+        guard let url = URL(string: APIConstant.shared.URLStringPoster + urlString) else {
             completion(nil)
             return
         }

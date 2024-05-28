@@ -16,7 +16,7 @@ class FilterFlavorAViewController: ViewController {
     }
 
     func popFilter() {
-        Handler.shared.research()
+        Handler.shared.refresh()
         self.dismiss(animated: true)
     }
     

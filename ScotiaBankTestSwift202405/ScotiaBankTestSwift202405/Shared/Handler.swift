@@ -31,11 +31,11 @@ class Handler {
     var adult = Adult.all
     var language = Language.all
     var average = Average.all
-    var main: TMDBViewController?
+    var vc: TMDBDelegateProtocol?
     var moviesThosePresent: [Movie] = []
     
-    func research() {
-        main?.reloadTable()
+    func refresh() {
+        vc?.refreshTable()
     }
 }
 
