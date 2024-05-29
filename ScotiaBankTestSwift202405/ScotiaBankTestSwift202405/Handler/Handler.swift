@@ -32,7 +32,6 @@ class Handler {
     var language = Language.all
     var average = Average.all
     var vc: TMDBDelegateProtocol?
-    var moviesThosePresent: [Movie] = []
     
     func refresh() {
         vc?.refreshTable()

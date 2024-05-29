@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				568DF12F2BFFEF7600594259 /* Atelier */,
-				569390A72BFE99B700B13FC5 /* Shared */,
+				569390A72BFE99B700B13FC5 /* Handler */,
 				566F811A2C06259300ADB9AB /* Networking */,
 				5693909C2BFE3D5700B13FC5 /* Model */,
 				569390992BFE372700B13FC5 /* UseCase */,
@@ -215,12 +215,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		569390A72BFE99B700B13FC5 /* Shared */ = {
+		569390A72BFE99B700B13FC5 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
 				569390A82BFE99F400B13FC5 /* Handler.swift */,
 			);
-			path = Shared;
+			path = Handler;
 			sourceTree = "<group>";
 		};
 		56D9D1AF2BFFA555003DA521 /* ViewModel */ = {

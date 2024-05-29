@@ -7,100 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DBF05B07-DF2B-465F-921C-42DABE6FFA31"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "fetchData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DBF05B07-DF2B-465F-921C-42DABE6FFA31 - 77905dee8917471"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for ScotiaBankTestSwift202405.TMDBUseCase.deliverMovies() async throws -&gt; ScotiaBankTestSwift202405.TMDB"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "451">
-               </Location>
-               <Location
-                  uuid = "DBF05B07-DF2B-465F-921C-42DABE6FFA31 - 77905dee8917471"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for ScotiaBankTestSwift202405.TMDBUseCase.deliverMovies() async throws -&gt; ScotiaBankTestSwift202405.TMDB"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "475">
-               </Location>
-               <Location
-                  uuid = "DBF05B07-DF2B-465F-921C-42DABE6FFA31 - fa5babcc32e6b787"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for ScotiaBankTestSwift202405.TMDBUseCase.deliverMovies() async throws -&gt; ScotiaBankTestSwift202405.TMDBFoo"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "451">
-               </Location>
-               <Location
-                  uuid = "DBF05B07-DF2B-465F-921C-42DABE6FFA31 - fa5babcc32e6b787"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for ScotiaBankTestSwift202405.TMDBUseCase.deliverMovies() async throws -&gt; ScotiaBankTestSwift202405.TMDBFoo"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "475">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7AF787B4-4BF6-432B-AF24-8AA1873A3B8A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "fetchData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "59E6834C-A598-411A-B5CA-ABBC59CFD80C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -108,8 +14,8 @@
             filePath = "ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "fetchData()"
             landmarkType = "7">
             <Locations>
@@ -286,54 +192,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BF62E04C-6072-403B-8871-EEDE72EF8D2D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScotiaBankTestSwift202405/View/TMDBViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BF62E04C-6072-403B-8871-EEDE72EF8D2D - 8b8fe505e534e83b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ScotiaBankTestSwift202405.TMDBViewController.textFieldDidBeginEditing(__C.UITextField) -&gt; ()"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/View/TMDBViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "82">
-               </Location>
-               <Location
-                  uuid = "BF62E04C-6072-403B-8871-EEDE72EF8D2D - 45719c655a921df8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ScotiaBankTestSwift202405.TMDBViewController.textField(_: __C.UITextField, shouldChangeCharactersIn: __C._NSRange, replacementString: Swift.String) -&gt; Swift.Bool"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/View/TMDBViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "109">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6502A9A8-07C2-4012-A9EA-2DE179A4AE99"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -373,8 +231,8 @@
             filePath = "ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "getData(filterForMovies:order:filter:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -389,58 +247,10 @@
             filePath = "ScotiaBankTestSwift202405/View/TMDBViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "63197F00-16BE-4C6C-B350-AD55F03E7C4D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScotiaBankTestSwift202405/View/TMDBViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "63197F00-16BE-4C6C-B350-AD55F03E7C4D - a7919adc4416917f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ScotiaBankTestSwift202405.TMDBViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/View/TMDBViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "1284">
-               </Location>
-               <Location
-                  uuid = "63197F00-16BE-4C6C-B350-AD55F03E7C4D - a7919adc4416917f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ScotiaBankTestSwift202405.TMDBViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "ScotiaBankTestSwift202405"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanmanuelmoreno/Documents/ParrotDayPatanjali/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/ScotiaBankTestSwift202405/View/TMDBViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "1384">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -453,8 +263,8 @@
             filePath = "ScotiaBankTestSwift202405/UseCase/TMDBUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "getData(filterForMovies:order:filter:)"
             landmarkType = "7">
             <Locations>

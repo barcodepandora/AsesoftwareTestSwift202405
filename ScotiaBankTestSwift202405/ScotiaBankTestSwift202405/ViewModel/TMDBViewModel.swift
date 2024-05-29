@@ -8,9 +8,9 @@
 import Foundation
 
 protocol TMDBViewModelProtocol {
-    func fetchData()
+    func fetchData() throws
     func getData(filterMovies: Handler, order: MovieOrder, filter: String) -> [Movie]
-    func orderData(order: MovieOrder, filter: String) -> [Movie]
+    func orderData(moviesForOrder: [Movie], order: MovieOrder, filter: String) -> [Movie]
 }
 
 class TMDBViewModel: TMDBViewModelProtocol {
@@ -21,10 +21,14 @@ class TMDBViewModel: TMDBViewModelProtocol {
         self.useCase = useCase
     }
     
-    func fetchData() {
+    func fetchData() throws {
         let semaphore = DispatchSemaphore(value: 0)
         Task {
-            try await useCase.fetchData()
+            do {
+                try await useCase.fetchData()
+            } catch {
+                throw ScotiaBankError.whenViewModel
+            }
             semaphore.signal()
         }
         semaphore.wait()
@@ -34,7 +38,7 @@ class TMDBViewModel: TMDBViewModelProtocol {
         return useCase.getData(filterForMovies: filterMovies, order: order, filter: filter)
     }
     
-    func orderData(order: MovieOrder, filter: String) -> [Movie] {
-        return useCase.orderData(moviesForOrder: Handler.shared.moviesThosePresent, order: order, filter: filter)
+    func orderData(moviesForOrder: [Movie], order: MovieOrder, filter: String) -> [Movie] {
+        return useCase.orderData(moviesForOrder: moviesForOrder, order: order, filter: filter)
     }
 }

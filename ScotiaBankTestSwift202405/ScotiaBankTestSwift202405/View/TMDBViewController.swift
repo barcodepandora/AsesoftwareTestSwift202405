@@ -7,21 +7,31 @@
 
 import UIKit
 
+class MoviesPublished {
+    static let shared = MoviesPublished()
+    var movies: [Movie]?
+}
+
 class ViewConstant {
     static let shared = ViewConstant()
     
     let rowH = CGFloat(89)
+    
+    let identifier = "TMDBViewCell"
 
     let FilteredY = 128
     let FilteredW = 267
     let FilteredH = 48
-
-    let identifier = "TMDBViewCell"
+    let FilteredAutolayoutT = 64
 
     let SegmentedX = 28
     let SegmentedY = 68
     let SegmentedW = 198
     let SegmentedH = 98
+    let SegmentedAutolayoutH = 49
+    
+    let TableAutolayoutT = 108
+    let TableAutolayoutH = 540
 }
 
 enum MovieOrder {
@@ -59,11 +69,15 @@ class TMDBViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: ViewConstant.shared.identifier, bundle: nil), forCellReuseIdentifier: ViewConstant.shared.identifier)
-//        do {
+        do {
             viewModel = TMDBViewModel()
-            viewModel?.fetchData()
+            try viewModel?.fetchData()
             refreshTable()
-//        }
+        } catch  {
+            let alert = UIAlertController(title: "Error", message: "No data", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in print("OK") })
+            present(alert, animated: true)
+        }
     }
     
     fileprivate func prepareMicrointeractions() {
@@ -80,20 +94,22 @@ class TMDBViewController: UIViewController {
             segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             segmentedControl.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             segmentedControl.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            segmentedControl.heightAnchor.constraint(equalToConstant: 49),
-            filtertextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 64),
+            segmentedControl.heightAnchor.constraint(equalToConstant: CGFloat(ViewConstant.shared.SegmentedAutolayoutH)),
+
+            filtertextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: CGFloat(ViewConstant.shared.FilteredAutolayoutT)),
             filtertextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             filtertextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            filtertextField.heightAnchor.constraint(equalToConstant: 49),
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 108),
+            filtertextField.heightAnchor.constraint(equalToConstant: CGFloat(ViewConstant.shared.SegmentedAutolayoutH)),
+
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: CGFloat(ViewConstant.shared.TableAutolayoutT)),
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            tableView.heightAnchor.constraint(equalToConstant: 540),
+            tableView.heightAnchor.constraint(equalToConstant: CGFloat(ViewConstant.shared.TableAutolayoutH)),
         ])
     }
     
     func orderData(order: MovieOrder, filter: String) -> [Movie] {
-        return (viewModel?.orderData(order: order, filter: filter))!
+        return (viewModel?.orderData(moviesForOrder: MoviesPublished.shared.movies!, order: order, filter: filter))!
     }
     
     override func viewDidLoad() {
@@ -113,15 +129,14 @@ class TMDBViewController: UIViewController {
 
 extension TMDBViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let picture = Handler.shared.moviesThosePresent[indexPath.row].poster_path!
-        self.present(PictureViewController(urlPicture: picture),  animated: true)
+        self.present(PictureViewController(urlPicture: MoviesPublished.shared.movies![indexPath.row].poster_path!), animated: true)
     }
 }
 
 extension TMDBViewController: UITableViewDataSource {
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Handler.shared.moviesThosePresent.count
+        return MoviesPublished.shared.movies!.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -130,21 +145,17 @@ extension TMDBViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ViewConstant.shared.identifier, for: indexPath) as! TMDBViewCell
-        cell.labelOriginalTitle.text = Handler.shared.moviesThosePresent[indexPath.row].title
+        cell.labelOriginalTitle.text = MoviesPublished.shared.movies![indexPath.row].title
         return cell
     }
 }
 
-extension TMDBViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return true
-    }
-}
+extension TMDBViewController: UITextFieldDelegate {}
 
 extension TMDBViewController: TMDBDelegateProtocol {
     @objc func refreshTable() {
         movieOrder = segmentedControl.selectedSegmentIndex == 1 ? .topRated : .popularity
-        Handler.shared.moviesThosePresent = viewModel?.getData(filterMovies: Handler.shared, order: movieOrder, filter: filtertextField.text!) ?? []
+        MoviesPublished.shared.movies = viewModel?.getData(filterMovies: Handler.shared, order: movieOrder, filter: filtertextField.text!) ?? []
         tableView.reloadData()
     }
 }

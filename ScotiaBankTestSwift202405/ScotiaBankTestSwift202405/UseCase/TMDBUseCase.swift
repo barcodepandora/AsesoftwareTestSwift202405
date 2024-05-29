@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum ScotiaBankError: Error {
+    case whenRequest
+    case whenData
+    case whenViewModel
+}
+
 protocol TMDBUseCaseProtocol {
     func fetchData() async throws -> [Movie]
     func getData(filterForMovies: Handler, order: MovieOrder, filter: String) -> [Movie]
@@ -18,10 +24,17 @@ class TMDBUseCase: TMDBUseCaseProtocol {
     var movies: [Movie]?
     
     func fetchData() async throws -> [Movie] {
-        let (data, _) = try await URLSession.shared.data(for: APIRouter.getData.urlRequest)
-        let decoder = JSONDecoder()
-        let aTMDB = try decoder.decode(TMDB.self, from: data)
-        movies = aTMDB.results
+        let (data, response) = try await URLSession.shared.data(for: APIRouter.getData.urlRequest)
+        let http = response as! HTTPURLResponse
+        if http.statusCode < 200 || http.statusCode > 300 {
+            throw ScotiaBankError.whenRequest
+        } else if data.isEmpty {
+            throw ScotiaBankError.whenData
+        } else {
+            let decoder = JSONDecoder()
+            let aTMDB = try decoder.decode(TMDB.self, from: data)
+            movies = aTMDB.results
+        }
         return movies!
     }
     
@@ -70,5 +83,4 @@ class TMDBUseCase: TMDBUseCaseProtocol {
         
         return moviesThoseOrder
     }
-
 }
