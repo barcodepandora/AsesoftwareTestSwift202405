@@ -125,6 +125,7 @@ class TMDBViewController: UIViewController {
         Handler.shared.vc = self
         self.present(FilterFlavorAViewController(), animated: true)
     }
+    
 }
 
 extension TMDBViewController: UITableViewDelegate {
@@ -146,6 +147,11 @@ extension TMDBViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ViewConstant.shared.identifier, for: indexPath) as! TMDBViewCell
         cell.labelOriginalTitle.text = MoviesPublished.shared.movies![indexPath.row].title
+        let imageUrl = MoviesPublished.shared.movies![indexPath.row].poster_path! //?? ""
+//        AsyncImageLoader.shared.loadImage(from: imageUrl) { [weak self] image in
+//            cell.photo?.image = image
+//        }
+        cell.configure(with: imageUrl)
         return cell
     }
 }
